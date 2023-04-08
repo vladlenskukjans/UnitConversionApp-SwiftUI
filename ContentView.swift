@@ -83,6 +83,7 @@ struct ContentView: View {
                     Text("Result")
                 }
             }
+            
             .navigationTitle("Converter")
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
@@ -96,6 +97,7 @@ struct ContentView: View {
                 let units = unitType[newSelection]
                 inputUnit = units[0]
                 outputUnit = units[1]
+                
             }
         }
         
