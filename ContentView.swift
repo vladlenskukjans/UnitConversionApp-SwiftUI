@@ -16,7 +16,7 @@ struct ContentView: View {
     @FocusState private var inputIsFocused: Bool
     
     
-    //var units: [UnitLength] = [.meters, .miles, .kilometers, .feet, .yards]
+    var units: [UnitLength] = [.meters, .miles, .kilometers, .feet, .yards]
     let forrmater: MeasurementFormatter
     
     let conversion = ["Distance", "Mass", "Temperature", "Time"]
@@ -97,7 +97,6 @@ struct ContentView: View {
                 let units = unitType[newSelection]
                 inputUnit = units[0]
                 outputUnit = units[1]
-                
             }
         }
         
@@ -109,10 +108,6 @@ struct ContentView: View {
     }
     
 }
-
-
-
-
 
 
 struct ContentView_Previews: PreviewProvider {
